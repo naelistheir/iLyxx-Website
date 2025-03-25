@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iLyxx Store - Setup Server & Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tambahan style biar makin kekinian */
+        .slang {
+            color: #4361ee;
+            font-weight: 600;
+        }
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">iLyxx<span>Store</span></a>
+            <div class="nav-links">
+                <a href="#home"><i class="fas fa-home emoji"></i>Home</a>
+                <a href="#services"><i class="fas fa-cogs emoji"></i>Layanan</a>
+                <a href="#portfolio"><i class="fas fa-folder emoji"></i>Project</a>
+                <a href="#about"><i class="fas fa-user emoji"></i>About</a>
+                <a href="#contact" class="cta-button"><i class="fas fa-paper-plane emoji"></i>Kontak</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>iLyxx Store <span class="slang">Area</span></h1>
+                <p>Kami specialize di <span class="slang">coding server, setup server, dan design</span> udah 2 tahun lebih. Project lo aman di kita!</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="primary-btn"><i class="fas fa-rocket emoji"></i>Yuk Collab!</a>
+                    <a href="#portfolio" class="secondary-btn"><i class="fas fa-eye emoji"></i>Explore Project</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ilustrasi Coding Server">
+            </div>
+        </div>
+            <!-- Music Player -->
+        <div class="music-player">
+            <audio id="bgMusic" loop>
+                <source src="assets/music/background.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung elemen audio.
+            </audio>
+            <button id="musicToggle" class="music-btn">
+                <i class="fas fa-music"></i>
+                <span class="music-text">Memuat Musik...</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Layanan yang <span class="slang">Tersedia</span></h2>
+                <p>Pilih yang lo butuhin, kita handle sampe beres!</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Coding Server</h3>
+                    <p>Membuat server mu semakin menarik <span class="slang">clean & fast</span> selalu ter-update</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Setup Server GTPS</h3>
+                    <p>Server lo kita setup dengan mudah, <span class="slang">ready</span> dan cepat!</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Design Grafis</h3>
+                    <p>Menyediakan design apapun yang kita bikin <span class="slang">aesthetic</span> biar makin pro</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Kenalin, <span class="slang">iLyxx Store</span></h2>
+                    <p>Udah 2 tahun lebih kita ngejalanin ini, dan beneran <span class="slang">passion</span> banget ngoding & design. Project-client kita sampe sekarang pada puas!</p>
+                    <p>Team kita tuh yang bener-bener <span class="slang">expert</span> di bidang server & design. Jadi lo ga perlu ragu buat percayain project ke kita!</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Tahun</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Project Kelar</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>30+</h3>
+                            <p>Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Tentang Kami">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hubungi <span class="slang">kami</span></h2>
+                <p>Selalu buka 24 jam, ready dan fast respon!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama lo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email aktif" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Mau bikin apa?">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ceritain detail projectnya..." required></textarea>
+                        </div>
+                        <button type="submit" class="primary-btn"><i class="fas fa-paper-plane emoji"></i>Kirim Pesan</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>ilyxxstore@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>+62 878 7596 2943</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Lokasi</h3>
+                            <p>Depok, Jawa Barat</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="logo">iLyxx<span>Store</span></a>
+                    <p>Spesialis bikin server & design <span class="slang">auto keren</span> buat bisnis lo!</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Tautan Menu</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Layanan</a></li>
+                        <li><a href="#portfolio"><i class="fas fa-chevron-right"></i> Project</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Hubungi Kita</h3>
+                    <p><i class="fas fa-envelope"></i> ilyxxstore@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +62 878 7596 2943</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 iLyxx Store. <span class="slang">All good in the hood.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6287875962943" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <script src="js/script.js"></script></body>
+</html>
